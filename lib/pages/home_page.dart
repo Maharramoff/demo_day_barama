@@ -39,7 +39,7 @@ class _HomePageState extends State<HomePage> {
               padding: EdgeInsets.symmetric(horizontal: 16),
               child: RichText(
                 text: TextSpan(
-                  text: "Projects",
+                  text: AppConstants.txtProjects,
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 24,
@@ -219,7 +219,7 @@ class _HomePageState extends State<HomePage> {
                 children: <Widget>[
                   Center(
                     child: Text(
-                      "Go To Website ".toUpperCase(),
+                      AppConstants.goToWebSiteBtnTxt.toUpperCase(),
                       style: TextStyle(
                         color: AppConstants.btnTxtColor,
                         fontWeight: FontWeight.bold,
@@ -246,7 +246,7 @@ class _HomePageState extends State<HomePage> {
       padding: const EdgeInsets.only(top: 50),
       child: Align(
         alignment: Alignment.topCenter,
-        child: Image.asset("assets/images/logo.png"),
+        child: Image.asset('assets/images/' + AppConstants.logoImage + '.png'),
       ),
     );
   }

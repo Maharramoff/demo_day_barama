@@ -33,7 +33,7 @@ class _IntroPageState extends State<IntroPage> {
               alignment: Alignment.center,
               child: Container(
                 width: MediaQuery.of(context).size.width * .7,
-                child: Image.asset("assets/images/bg.png"),
+                child: Image.asset('assets/images/' + AppConstants.bgImage + '.png'),
               ),
             ),
             _buildFooter(context),
@@ -48,7 +48,7 @@ class _IntroPageState extends State<IntroPage> {
       padding: const EdgeInsets.only(top: 50),
       child: Align(
         alignment: Alignment.topCenter,
-        child: Image.asset("assets/images/logo.png"),
+        child: Image.asset('assets/images/' + AppConstants.logoImage + '.png'),
       ),
     );
   }
@@ -62,7 +62,7 @@ class _IntroPageState extends State<IntroPage> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             Text(
-              "Demo Day App".toUpperCase(),
+              AppConstants.appTitle.toUpperCase(),
               style: TextStyle(
                 fontSize: 26,
                 color: Color(0xFF2c2f33),
@@ -100,7 +100,7 @@ class _IntroPageState extends State<IntroPage> {
                   children: <Widget>[
                     Center(
                       child: Text(
-                        "Get to know our projects".toUpperCase(),
+                        AppConstants.introBtnTxt.toUpperCase(),
                         style: TextStyle(
                           color: AppConstants.btnTxtColor,
                           fontWeight: FontWeight.bold,
